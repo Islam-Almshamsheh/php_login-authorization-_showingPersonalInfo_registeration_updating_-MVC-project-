@@ -1,0 +1,243 @@
+*{
+    margin: 5;
+    padding: 0;
+    color: black;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+}
+.menu{
+    background:#dad5d5;
+    border-radius:10px;
+    height: 100vh;
+    width: 260px;
+    padding: 16px;
+    overflow: hidden;
+    transition:1s;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.6);
+}
+.img-box{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+.img-box img{
+    width: 100%;
+    height: 100%;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(136, 138, 138);
+    border-radius: 8px;
+    padding:10px;
+}
+
+.profile h2{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+ul{
+    list-style: none;
+    position: relative;/*we want to move the sing out button based on the ul*/
+    height: 95%;
+}
+ul li a{
+    height: 25px;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: .5s;
+    background-color: rgb(136, 138, 138);
+}
+ul li.log-out{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.log-out a{
+    background-color: #7d7deb;
+}
+
+ul li a i{
+    font-size: 22px;
+}
+a.cancel {
+    background-color: #7d7deb;
+    color: black;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+}
+.data-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:10px;
+    margin:10px 0px;
+    width:100%;
+}
+.data-info .box{
+    height: 150px;
+    display: flex;
+    flex-basis: 200px;
+    background-color: #dad5d5;
+    flex-grow: 1;
+    border-radius: 8px;
+    justify-content: space-around;
+    align-items: center;
+}
+.data-info .box .data{
+    text-align: center;
+}
+.data-info .box .data span{
+    font-weight: 700;
+}
+.data-info .box i{
+    font-size: 40px;
+}
+ul li a:hover{
+    background-color: #908c8c55;
+}
+.content{
+    width: 100%;
+    margin: 10px;
+}
+.title-info{
+    background-color: #7d7deb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    padding: 0px 5px;  
+    width: 100%;  
+}
+.center{
+    text-align: center;
+}
+.container{
+    background:#fff;
+    width:500px;
+    padding:24px;
+    margin:50px auto;
+    border-radius:10px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.input-group{
+    padding: 10px 5px;
+    position:relative;
+    background-color:hsla(227, 63%, 18%, 0.07);
+    margin: 16px auto;
+    border-radius:12px;
+    display:flex;
+    }
+.form-title{
+        font-size:1.5rem;
+        font-weight:700;
+        text-align:center;
+        padding:1.3rem;
+        margin-bottom:0.4rem;
+}   
+input{
+    flex:10;
+    color:inherit;
+    width:100%;
+    background-color:transparent;
+    border:none;
+    font-size:15px;
+    padding:0 0.4em;
+    border-left:solid 1px hsla(0, 0%, 0%, 0.4)
+} 
+input:focus{
+    border-left:solid 1px hsla(240, 73%, 71%, 1);
+    outline:none;
+}
+.input-group i{
+    flex:1;
+    color:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.input-group:focus-within i{
+    color:rgb(125,125,235);
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+    gap:10px;
+}
+.btns form{
+    flex-grow:1;
+}
+.btn {
+    font-size:24px;
+    padding:0.6em 0;
+    border-radius:10px;
+    outline:none;
+    border:none;
+    background:#7d7deb;
+    color:black;
+    cursor:pointer;
+    transition:0.9s;
+    margin-top:0.4em;
+    font-weight:600;
+    width: 100%;
+}
+.form-error{
+    color: red;
+}
+
+table{
+    background-color: #123;
+    width: 100%;
+    border-radius: 10px;
+    color:white;
+
+}
+
+td,th{
+    background-color: #123;
+    height: 40px;
+    border-radius: 10px;
+    width:20%;
+    text-align: center; 
+    color: white;
+}
+
+th{
+    background-color: #999904;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: none; /* Removes the border */
+    color: #992e99;
+    background-color: #f9f9f9; /* Optional: Sets a background color */
+    appearance: none; /* Hides the native dropdown styling in some browsers */
+}
+.label{
+    padding:1.5%;
+    color:#992e99;
+}
+/* belong to dashboard of the user */
